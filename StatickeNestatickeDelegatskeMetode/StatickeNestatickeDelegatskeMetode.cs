@@ -22,13 +22,17 @@ namespace Vsite.CSharp
 
         static void Main(string[] args)
         {
-            // TODO: Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata
+            // Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata
 
+            MojDelegat md = StatičkaMetoda;
 
+            md();
 
-            // TODO: Gornjem delegatu pridružiti metodu MetodaInstance te ponovno pozvati delegata
+            // Gornjem delegatu pridružiti metodu MetodaInstance te ponovno pozvati delegata
 
-
+            Program p = new Program();
+            md += p.MetodaInstance;
+            md();
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();

@@ -24,11 +24,14 @@ namespace Vsite.CSharp
 
         static void Main(string[] args)
         {
-            Thread nit = new Thread(NitnaMetoda);
+           // Thread nit = new Thread(NitnaMetoda);
 
-            // TODO: Umjesto gornje naredbe u kojoj se prosljeđuje NitnaMetoda, novoj niti proslijediti anonimnu metodu definiranu pomoću delegata
+            // Umjesto gornje naredbe u kojoj se prosljeđuje NitnaMetoda, novoj niti proslijediti anonimnu metodu definiranu pomoću delegata
 
-            
+            Thread nit = new Thread.(delegate)
+            {
+
+    }
             
             
             

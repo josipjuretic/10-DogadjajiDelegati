@@ -14,14 +14,33 @@ namespace Vsite.CSharp
         public MainForm()
         {
             InitializeComponent();
+            buttonDelete.Click += buttonDelete_Click;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         // TODO: Dodati metodu za obradu događaja (event handler) koji će onemogućiti tipku buttonDelete ako nema upisanog teksta u kontroli textBox, odnosno omogućiti kada je neki tekst upisan.
+        private void textBox ()
+        {
+        buttonDelete.Enabled = TextBox.TextLenght = 0;
 
-
+    }
         // TODO: Dodati metodu za obradu događaja koji će na pritisak tipke buttonDelete obrisati sadržaj kontrole textBox.
- 
 
-        // TODO: Dodati metodu za obradu događaja koji će na pritisak tipke buttonClose zatvoriti formu.
+        private void ButtonDelete_Click(object sender, EventArgs e)
+    {
+        TextBox.Text =  string Empty;
+    }
+
+
+         // TODO: Dodati metodu za obradu događaja koji će na pritisak tipke buttonClose zatvoriti formu.
+
+        private void buttonClose_click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
